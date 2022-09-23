@@ -163,8 +163,8 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
-                                <button type="button" class="btn btn-primary" id="nuevo">Nuevo</button>
-                                <button type="button" class="btn btn-primary" id="actualizar">Actualizar</button>
+                                <button type="button" class="btn btn-primary" id="btnNuevo">Nuevo</button>
+                                <button type="button" class="btn btn-primary" id="btnActualizar">Actualizar</button>
                             </div>
                         </div>
                         <div class="row">
@@ -193,20 +193,58 @@
 
                 </div>
             </div>
-            <!-- End of Main Content -->
-
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+        </div>
+        <div class="modal fade" id="modalCliente" tabindex=" -1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+            style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Nuevo Cliente</h5>
+                        <!--<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="txtNombre" class="col-form-label">Nombre</label>
+                                <input type="text" class="form-control" id="txtNombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtApellido" class="col-form-label">Apellido</label>
+                                <input type="text" class="form-control" id="txtApellido">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtCI" class="col-form-label">CI</label>
+                                <input type="text" class="form-control" id="txtCI">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtTipo" class="col-form-label">Tipo CI</label>
+                                <input type="text" class="form-control" id="txtTipo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtNacionalidad" class="col-form-label">Nacionalidad</label>
+                                <input type="text" class="form-control" id="txtNacionalidad">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtEmail" class="col-form-label">Email</label>
+                                <input type="text" class="form-control" id="txtEmail">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtTelefono" class="col-form-label">Telefono</label>
+                                <input type="text" class="form-control" id="txtTelefono">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtNacimiento" class="col-form-label">Fecha de Nacimiento</label>
+                                <input type="date" class="form-control" id="txtNacimiento">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" id="btnCerrar">Cerrar</button>
+                        <button type="button" class="btn btn-primary" id="btnGuardar">Guardar</button>
                     </div>
                 </div>
-            </footer>
-            <!-- End of Footer -->
-
+            </div>
         </div>
-        <!-- End of Content Wrapper -->
 
     </div>
     <!-- End of Page Wrapper -->
@@ -225,13 +263,6 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
 
     <script src="jq/clientes.js"></script>
 </body>
