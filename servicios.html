@@ -60,10 +60,9 @@
                     <span>Datos de Clientes</span></a>
             </li>
 
-            <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="puntos.html">
-                    <span>Usos de Puntos</span></a>
+                <a class="nav-link" href="conceptos.html">
+                    <span>Conceptos de Puntos</span></a>
             </li>
 
             <li class="nav-item">
@@ -74,6 +73,16 @@
             <li class="nav-item">
                 <a class="nav-link" href="parametrizacion.html">
                     <span>Parametrizacion</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="bolsa.html">
+                    <span>Bolsa de Puntos</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="uso.html">
+                    <span>Uso de Puntos</span></a>
             </li>
 
             <li class="nav-item">
@@ -162,36 +171,16 @@
                     </div>
                     <div class="container-fluid">
                         <div class="row">
-                            <!--div class="col-md-12">
-                                <button type="button" class="btn btn-primary" id="nuevo">Nuevo</button>
-                                <button type="button" class="btn btn-primary" id="actualizar">Actualizar</button>
-                            </div-->
-                        </div>
-                        <div class="row">
-                            <!--div class="col-md-12">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Id</th>
-                                            <th scope="col">Fecha de Inicio</th>
-                                            <th scope="col">Fecha Validez</th>
-                                            <th scope="col">Dias de duracion</th>
-                                            <th scope="col">Cliente</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="tabla">
-
-                                    </tbody>
-                                </table>
-                            </div-->
+                            <div class="col-md-12">
+                                <button type="button" class="btn btn-primary" id="btnCarga">Carga</button>
+                                <button type="button" class="btn btn-primary" id="btnUtilizar">Utilizar</button>
+                                <button type="button" class="btn btn-primary" id="btnConsulta">Consulta</button>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-            <!-- End of Main Content -->
 
-            <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
@@ -199,10 +188,59 @@
                     </div>
                 </div>
             </footer>
-            <!-- End of Footer -->
 
         </div>
-        <!-- End of Content Wrapper -->
+        <div class="modal fade" id="modalCarga" tabindex=" -1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+            style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Carga de Puntos</h5>
+                        <!--<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="txtId" class="col-form-label">Id</label>
+                                <input type="text" class="form-control" id="txtId">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtIcliente" class="col-form-label">Id Cliente</label>
+                                <input type="text" class="form-control" id="txtIcliente">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtAsignacion" class="col-form-label">Fecha de Asignacion</label>
+                                <input type="date" class="form-control" id="txtAsignacion">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtCaducidad" class="col-form-label">Fecha de Caducidad</label>
+                                <input type="date" class="form-control" id="txtCaducidad">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtAsignado" class="col-form-label">Puntaje Asignado</label>
+                                <input type="text" class="form-control" id="txtAsignado">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtUtilizado" class="col-form-label">Puntaje Utilizado</label>
+                                <input type="text" class="form-control" id="txtUtilizado">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtSaldo" class="col-form-label">Saldo de puntos</label>
+                                <input type="text" class="form-control" id="txtSaldo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtMonto" class="col-form-label">Monto de Operacion</label>
+                                <input type="text" class="form-control" id="txtMonto">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" id="btnCerrar">Cerrar</button>
+                        <button type="button" class="btn btn-primary" id="btnGuardar">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
     <!-- End of Page Wrapper -->
