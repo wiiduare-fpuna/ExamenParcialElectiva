@@ -77,11 +77,6 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="bolsaPuntos.html">
-                    <span>Bolsa de Puntos</span></a>
-            </li>
-
-            <li class="nav-item">
                 <a class="nav-link" href="reportes.html">
                     <span>Reportes</span></a>
             </li>
@@ -163,14 +158,14 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Parametrizacion</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Usos de Puntos</h1>
                     </div>
                     <div class="container-fluid">
                         <div class="row">
-                            <!--div class="col-md-12">
-                                <button type="button" class="btn btn-primary" id="nuevo">Nuevo</button>
-                                <button type="button" class="btn btn-primary" id="actualizar">Actualizar</button>
-                            </div-->
+                            <div class="col-md-12">
+                                <button type="button" class="btn btn-primary" id="btnNuevo">Nuevo</button>
+                                <button type="button" class="btn btn-primary" id="btnActualizar">Actualizar</button>
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
@@ -178,10 +173,8 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">Id</th>
-                                            <th scope="col">Fecha de Inicio</th>
-                                            <th scope="col">Fecha Validez</th>
-                                            <th scope="col">Dias de duracion</th>
-                                            <th scope="col">Cliente</th>
+                                            <th scope="col">Concepto</th>
+                                            <th scope="col">Puntos Requeridos</th>
                                         </tr>
                                     </thead>
                                     <tbody id="tabla">
@@ -190,9 +183,38 @@
                                 </table>
                             </div>
                         </div>
+                        
                     </div>
 
                 </div>
+                <div class="modal fade" id="modalPuntos" tabindex=" -1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+            style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Usos de Puntos</h5>
+                        <!--<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="txtConcepto" class="col-form-label">Concepto</label>
+                                <input type="text" class="form-control" id="txtConcepto">
+                            </div>
+                            <div class="mb-3">
+                                <label for="txtPuntos" class="col-form-label">Puntos Requeridos</label>
+                                <input type="text" class="form-control" id="txtPuntos">
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" id="btnCerrar">Cerrar</button>
+                        <button type="button" class="btn btn-primary" id="btnGuardar">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
             </div>
             <!-- End of Main Content -->
 
@@ -225,16 +247,9 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="js/sb-admin-2.min.js"></script>s
 
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
-
-    <script src="jq/parametrizacion.js"></script>
+    <script src="jq/puntos.js"></script>
 </body>
 
 </html>
