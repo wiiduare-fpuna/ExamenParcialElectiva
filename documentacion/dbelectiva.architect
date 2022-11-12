@@ -107,7 +107,7 @@
     <folder id="FOLTAB192" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB194" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX28" populated="true" UUID="b3858b1d-ac22-4b38-9f1b-0957365037bd" clustered="false" name="reglaparametrizacion_pk" physicalName="regla_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX28" populated="true" UUID="b3858b1d-ac22-4b38-9f1b-0957365037bd" clustered="false" name="reglaparametrizacion_pk" physicalName="reglaparametrizacion_pk" primaryKeyIndex="true" unique="false" >
      <index-column id="IDC29" populated="true" UUID="1f79cc39-a8fa-4f67-aaa9-df187ae30a3b" ascendingOrDescending="UNSPECIFIED" column-ref="COL20" name="id_regla" physicalName="id_regla" />
     </index>
    </folder>
@@ -121,25 +121,25 @@
     <column id="COL32" populated="true" UUID="784a2083-4caf-4940-9276-e963c01fb4b6" autoIncrement="false" autoIncrementSequenceName="datosClientes_id_clientes_seq_2" defaultValue="" name="id_cliente" nullable="0" physicalName="id_cliente" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL33" populated="true" UUID="69fd98cf-3aae-4c07-a97f-76cb6ccdd96e" autoIncrement="false" autoIncrementSequenceName="bolsa_puntajeAsignado_seq" defaultValue="" name="puntajeasignado" nullable="0" physicalName="puntajeasignado" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL33" populated="true" UUID="dcdca55a-51fc-48d7-983e-562df82990aa" autoIncrement="false" autoIncrementSequenceName="reglaparametrizacion_id_regla_seq_1" defaultValue="" name="id_regla" nullable="0" physicalName="id_regla" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL34" populated="true" UUID="90021add-84e5-4066-b3fd-009c79f70d43" autoIncrement="false" autoIncrementSequenceName="bolsa_puntajeUtilizado_seq" defaultValue="" name="puntajeutilizado" nullable="0" physicalName="puntajeutilizado" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL34" populated="true" UUID="69fd98cf-3aae-4c07-a97f-76cb6ccdd96e" autoIncrement="false" autoIncrementSequenceName="bolsa_puntajeAsignado_seq" defaultValue="" name="puntajeasignado" nullable="0" physicalName="puntajeasignado" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL35" populated="true" UUID="11472792-4d71-4f01-b231-18279f8a9495" autoIncrement="false" autoIncrementSequenceName="bolsaPuntos_saldoPuntaje_seq" defaultValue="" name="saldoPuntos" nullable="0" physicalName="saldoPuntos" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL35" populated="true" UUID="90021add-84e5-4066-b3fd-009c79f70d43" autoIncrement="false" autoIncrementSequenceName="bolsa_puntajeUtilizado_seq" defaultValue="" name="puntajeutilizado" nullable="0" physicalName="puntajeutilizado" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL36" populated="true" UUID="c614ed94-197e-4e61-9659-df6ae380b6f9" autoIncrement="false" autoIncrementSequenceName="bolsa_montoOperacion_seq" defaultValue="" name="montooperacion" nullable="0" physicalName="montooperacion" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL36" populated="true" UUID="11472792-4d71-4f01-b231-18279f8a9495" autoIncrement="false" autoIncrementSequenceName="bolsaPuntos_saldoPuntaje_seq" defaultValue="" name="saldoPuntos" nullable="0" physicalName="saldoPuntos" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL37" populated="true" UUID="1347f944-dc5b-4be8-b67c-13305e7a162b" autoIncrement="false" autoIncrementSequenceName="bolsa_fechaasignacion_seq" defaultValue="" name="fechaasignacion" nullable="0" physicalName="fechaasignacion" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL37" populated="true" UUID="c614ed94-197e-4e61-9659-df6ae380b6f9" autoIncrement="false" autoIncrementSequenceName="bolsa_montoOperacion_seq" defaultValue="" name="montooperacion" nullable="0" physicalName="montooperacion" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL38" populated="true" UUID="1396a74b-1959-456e-be36-62cf50de6ebf" autoIncrement="false" autoIncrementSequenceName="bolsa_fechacaducidad_seq" defaultValue="" name="fechacaducidad" nullable="0" physicalName="fechacaducidad" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+    <column id="COL38" populated="true" UUID="1347f944-dc5b-4be8-b67c-13305e7a162b" autoIncrement="false" autoIncrementSequenceName="bolsa_fechaasignacion_seq" defaultValue="" name="fechaasignacion" nullable="0" physicalName="fechaasignacion" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL39" populated="true" UUID="dcdca55a-51fc-48d7-983e-562df82990aa" autoIncrement="false" autoIncrementSequenceName="reglaparametrizacion_id_regla_seq" defaultValue="" name="id_regla" nullable="0" physicalName="id_regla" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL39" populated="true" UUID="1396a74b-1959-456e-be36-62cf50de6ebf" autoIncrement="false" autoIncrementSequenceName="bolsa_fechacaducidad_seq" defaultValue="" name="fechacaducidad" nullable="0" physicalName="fechacaducidad" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
      <remarks></remarks>
     </column>
     </folder>
@@ -222,7 +222,7 @@
     <column-mapping id="CMP64" populated="true" UUID="331f3c46-30d4-401e-b862-9cadcf363886" fk-column-ref="COL21" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL14" />
    </relationship>
    <relationship id="REL65" populated="true" UUID="23e55f9a-bedb-4321-a79f-7441db0b5b7b" deferrability="7" deleteRule="3" fk-table-ref="TAB30" fkCardinality="6" identifying="false" name="reglaparametrizacion_bolsa_fk" physicalName="reglaparametrizacion_bolsa_fk" pk-table-ref="TAB19" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP66" populated="true" UUID="ef275f28-c26a-4696-a642-ca3fbd658840" fk-column-ref="COL39" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL20" />
+    <column-mapping id="CMP66" populated="true" UUID="ef275f28-c26a-4696-a642-ca3fbd658840" fk-column-ref="COL33" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL20" />
    </relationship>
    <relationship id="REL67" populated="true" UUID="88622387-41fe-42c1-8b0e-4321680da29c" deferrability="7" deleteRule="3" fk-table-ref="TAB50" fkCardinality="6" identifying="false" name="bolsa_detalle_fk" physicalName="bolsa_detalle_fk" pk-table-ref="TAB30" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP68" populated="true" UUID="7055ca18-2b89-4d75-9159-e0a2d5b16748" fk-column-ref="COL53" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL31" />
@@ -232,7 +232,7 @@
    </relationship>
   </relationships>
  </target-database>
- <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="true" target-schema="public"> </ddl-generator>
+ <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="false" target-schema="public"> </ddl-generator>
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
  <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">

@@ -5,6 +5,7 @@ const puerto = 3000
 const funcion = require('./recurso/funcion');//se invoca funcion
 
 app.use(bodyParser.json())
+app.use(express.static('public'));
 
 app.route('/')
     .get(function (peticion, respuesta) {
