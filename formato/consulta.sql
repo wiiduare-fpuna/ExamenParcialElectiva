@@ -1,2 +1,2 @@
 
-select nombre, apellido, nrodocumento, tipodocumento, nacionalidad, email, telefono, fechanacimiento from cliente;
+select id_cliente, nombre, apellido, nrodocumento, tipodocumento, nacionalidad, email, telefono, fechanacimiento from cliente;

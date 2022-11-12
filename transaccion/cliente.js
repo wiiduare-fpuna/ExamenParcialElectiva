@@ -14,7 +14,7 @@ function principal(contenedor) {
 function listar() {
     const cliente = new Client(conexion);
     cliente.connect();
-    cliente.query("select nombre, apellido, nrodocumento, tipodocumento, nacionalidad, email, telefono, fechanacimiento from cliente;")
+    cliente.query("select id_cliente, nombre, apellido, nrodocumento, tipodocumento, nacionalidad, email, telefono, fechanacimiento from cliente;")
         .then(respuesta => {
             arrayJson = respuesta.rows
         })
