@@ -2,7 +2,7 @@ const { Client } = require('pg');//se invoca la libreria de postgres
 
 const conexion = {
     user: 'postgres',
-    password: 'bely',
+    password: 'automovil',
     host: 'localhost',
     port: '5432',
     database: 'dbelectiva'
